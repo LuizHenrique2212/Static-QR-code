@@ -8,57 +8,74 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body{
-     display: flex;
-     flex-direction: column;
-     background-color: #d5e1ef;
-     height: 100vh;
-     align-items: center;
-     justify-content:center; 
-     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #d5e1ef;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    .main{
+    .main {
       background-color: white;
       display: flex;
       flex-direction: column;
       border-radius: 20px;
-      width: 400px;
-      /* height: 500px; */
+      min-width: 250px;
+      width: 55vw;
       align-items: center;
       justify-content: center;
       margin-bottom: 100px;
     }
 
-    img{
+    img {
       margin-top: 20px;
-      width: 350px;
+      min-width: 180px;
+      width: 45vw;
       border-radius: 20px;
     }
 
-    .description{
+    .description {
       text-align: center;
     }
 
-    .title{
+    .title {
       font-size: 20px;
-      color:#22385e;
+      color: #22385e;
     }
 
-    .paragraph{
+    .paragraph {
       text-align: center;
-      color:#b4b5bb;
-    }  
-
-    .attribution a{
-      color: rgb(161, 137, 0);
+      color: #b4b5bb;
     }
-    
-    .attribution a:hover{
-      color: red;
+
+    .attribution a {
+      color: coral;
+      text-decoration: none;
+    }
+
+    .attribution a:hover {
+      color: rgb(0, 17, 255);
+    }
+
+    @media screen and (max-width: 480px) {
+
+      .description h2 {
+        font-size: 1em;
+      }
+
+      .description p {
+        font-size: 0.7em;
+      }
+
+      .attribution {
+        text-align: center;
+        line-height: 25px;
+      }
+
     }
   </style>
 </head>
@@ -70,13 +87,14 @@
     </div>
     <div class="description">
       <h2 class="title"> Improve your front-end <br>skills by building projects</h2>
-      <p class="paragraph">Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level</p>
+      <p class="paragraph">Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next
+        level</p>
     </div>
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/LuizHenrique2212" target="blank">Luiz Henrique</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a>
+    Coded by <a href="https://github.com/LuizHenrique2212" target="blank">Luiz Henrique</a>
   </div>
 </body>
 
