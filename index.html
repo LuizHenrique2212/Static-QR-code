@@ -4,38 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | QR code component</title>
+
   <style>
     body {
-      display: flex;
-      flex-direction: column;
       background-color: #d5e1ef;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
+      padding-top: 50px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      overflow: auto;
     }
 
-    .main {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main {
       background-color: white;
       display: flex;
       flex-direction: column;
       border-radius: 20px;
-      min-width: 250px;
-      width: 55vw;
+      width: 100%;
       align-items: center;
       justify-content: center;
-      margin-bottom: 100px;
+      margin-bottom: 60px;
+      font-size: 100%;
     }
 
     img {
-      margin-top: 20px;
-      min-width: 180px;
-      width: 45vw;
+      width: 75%;
       border-radius: 20px;
+      margin-top: 30px;
     }
 
     .description {
@@ -43,13 +44,18 @@
     }
 
     .title {
-      font-size: 20px;
+      font-size: 1.2em;
       color: #22385e;
     }
 
     .paragraph {
       text-align: center;
       color: #b4b5bb;
+      font-size: 0.9em;
+    }
+
+    .attribution {
+      text-align: center;
     }
 
     .attribution a {
@@ -61,40 +67,28 @@
       color: rgb(0, 17, 255);
     }
 
-    @media screen and (max-width: 480px) {
-
-      .description h2 {
-        font-size: 1em;
+    @media screen and (min-width: 425px) {
+      main {
+        width: 400px;
       }
-
-      .description p {
-        font-size: 0.7em;
-      }
-
-      .attribution {
-        text-align: center;
-        line-height: 25px;
-      }
-
     }
   </style>
 </head>
 
 <body>
-  <div class="main">
-    <div class="image">
+  <div class="container">
+    <main>
       <img src="./images/image-qr-code.png" alt="QR-code">
+      <div class="description">
+        <h2 class="title"> Improve your front-end <br>skills by building projects</h2>
+        <p class="paragraph">Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next
+          level</p>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a>
+      Coded by <a href="https://github.com/LuizHenrique2212" target="blank">Luiz Henrique</a>
     </div>
-    <div class="description">
-      <h2 class="title"> Improve your front-end <br>skills by building projects</h2>
-      <p class="paragraph">Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next
-        level</p>
-    </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a>
-    Coded by <a href="https://github.com/LuizHenrique2212" target="blank">Luiz Henrique</a>
   </div>
 </body>
 
